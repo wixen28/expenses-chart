@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- balance div -->
+    <div class="my-balance-section">
+      <div class="balance-text">
+        <h3>My balance</h3>
+        <p id="balance-sum"><span id="dolar-sign">$</span>921.48</p>
+      </div>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" id="logo">
+      </div>
+    </div>
+    <!-- spending div -->
+    <div class="spending-div">
+      <h1>Spending - Last 7 days</h1>
+      <!-- <div class="chart">
+        <canvas id="myChart" width="400" height="400"></canvas>
+      </div> -->
+            <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+      <div class="chart">
+        <div class='bar-box' id="mon">
+          <p class="day">mon</p>
+          <div class="bar-level" id="mon" style="height: 20%">
+            <p class="label-amount " >$22</p>
+          </div>
+    
+        </div>
+
+        <div class='bar-box'>
+          <p class="day" >tue</p>
+           <div class="bar-level" id="tue" style="height: 40%">
+           <p class="label-amount">$23</p>
+          </div>
+      
+        </div>
+
+        <div class='bar-box'>
+          <p class="day">wed</p>
+          <div class="bar-level" id="wed" style="height: 60%">
+            <p class="label-amount">$20</p>
+          </div>
+        </div>
+
+        <div class='bar-box'>
+          <p class="day">thru</p>
+          <div class="bar-level" id="thu" style="height: 45%">
+            <p class="label-amount">$20</p>
+          </div>
+        </div>
+
+        <div class='bar-box'>
+          <p class="day">fri</p>
+          <div class="bar-level" id="fri" style="height: 30%">
+            <p class="label-amount">$20</p>
+          </div>
+        </div>
+
+        <div class='bar-box'>
+          <p class="day">sat</p>
+          <div class="bar-level" id="sat" style="height: 50%">
+            <p class="label-amount">$20</p>
+          </div>
+        </div>
+
+        <div class='bar-box'>
+          <p class="day">sun</p>
+          <div class="bar-level" id="sun" style="height: 30%">
+            <p class="label-amount">$20</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+    <div class="below-part">
+      
+        <div class="left">
+          <p id="total">Total this month</p>
+          <p id="total-amount">$227.94</p>
+        </div>
+        <div class="right">
+          <p id="percentage">+2.4%</p>
+          <p id="last-month">from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="piechart" style="width: 900px; height: 500px;"></div> -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Viktoria</a>.
+  </div>
+  <script type='module' src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"  type="module"></script>
+</body>
+  </html>
